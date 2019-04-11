@@ -51,6 +51,8 @@ def num():
         digits()
         if (cursor == '.'):
         	error(2)
+        elif (cursor == '$'):
+            error(3)
 
 def digits():
     while cursor in digits_arr: # if current letter is in the list
